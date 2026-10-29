@@ -1,7 +1,7 @@
 window.V4_SCORE = {
   "title": "MEMBRAN — Semantische Konstellationen V4.1.3",
   "duration": 353,
-  "source_count": 87,
+  "source_count": 86,
   "movements": [
     {
       "index": 1,
@@ -598,7 +598,7 @@ window.V4_SCORE = {
         {
           "index": 27,
           "title": "MORGEN IST KEIN NEUSTART",
-          "mode": "horizon",
+          "mode": "horizon_exit",
           "duration": 12,
           "start": 307,
           "images": [
@@ -611,7 +611,7 @@ window.V4_SCORE = {
             "OOGnightcoming-scaled.jpg",
             "risingsunduenung.jpg",
             "sunrise-surfer-scaled.jpg",
-            "FlugindenMorgen-scaled.jpg"
+            "Z25-Fernblick-scaled.jpg"
           ],
           "meaning": "Morgen folgt auf Nacht, trägt aber die vergangenen Bilder noch in sich.",
           "movement": 8
@@ -625,11 +625,9 @@ window.V4_SCORE = {
           "images": [
             85,
             86,
-            87,
             59
           ],
           "filenames": [
-            "FlugindenMorgen-scaled.jpg",
             "Z25-Fernblick-scaled.jpg",
             "S-Abendstrand-4.jpg",
             "SchoeneAussichten-scaled.jpg"
@@ -641,5 +639,5 @@ window.V4_SCORE = {
     }
   ],
   "scene_count": 28,
-  "revision": "V4.1.3 — GdW- und Oase-Fokussierungen kontextbewusst zurückgenommen; Plötzensee-Endhalt und Spiegelsphere-Spezialzoom unverändert"
+  "revision": "V4.1.3 — GdW- und Oase-Fokussierungen kontextbewusst zurückgenommen; Plötzensee-Endhalt und Spiegelsphere-Spezialzoom unverändert · Flugzeugfensterbild entfernt; Schlussübergang kontinuierlich"
 };
