@@ -70,7 +70,7 @@ case'magnify':{drawCover(I[0],R,{zoom:1.02});[[.26,.48,.12],[.52,.45,.16],[.7,.5
 case'archive':{drawCover(I[0],R,{a:.55,filter:'brightness(.72)'});let tr=[{x:W*.05,y:H*.08,w:W*.42,h:H*.4},{x:W*.53,y:H*.08,w:W*.42,h:H*.4},{x:W*.19,y:H*.52,w:W*.62,h:H*.4}];for(let k=1;k<4;k++){let a=stage(.12+.18*k,.42+.18*k),r=tr[k-1];drawCover(I[k],{...r,y:r.y+lerp(H*.14,0,a)},{a,zoom:1.02})}break}
 case'mirror':{drawCover(I[0],R,{a:.65});let a=stage(.15,.48);drawCover(I[1],{x:0,y:0,w:W*.5,h:H},{a});drawCover(I[2],{x:W*.5,y:0,w:W*.5,h:H},{a});let b=stage(.52,.88);drawCover(I[3],{x:W*.34,y:H*.08,w:W*.32,h:H*.84},{a:b,zoom:1.05});break}
 case'ice':{drawCover(I[0],R,{zoom:1.03});let a=stage(.18,.5);drawCover(I[1],R,{a:a*.7,blend:'screen',filter:`grayscale(${1-a*.2})`});let b=stage(.42,.72);drawCover(I[2],{x:W*.08,y:H*.1,w:W*.5,h:H*.8},{a:b*.9});let d=stage(.68,.95);drawCover(I[3],R,{a:d*.78,blend:'screen',filter:`blur(${lerp(7,0,d)}px)`});break}
-case'window':{drawCover(I[0],R,{a:.7,filter:'brightness(.72)'});[[.05,.12,.43,.34],[.52,.12,.43,.34],[.2,.52,.6,.35]].forEach((b,j)=>{let k=j+1,a=stage(.12+.2*k,.42+.2*k);drawCover(I[k],{x:W*b[0],y:H*b[1],w:W*b[2],h:H*b[3]},{a,zoom:1.03})});break}
+case'window':{drawCover(I[0],R,{a:.7,filter:'brightness(.72)'});[[.05,.12,.43,.34],[.52,.12,.43,.34],[.2,.52,.6,.35]].forEach((b,j)=>{let k=j+1,a=stage(.12+.2*k,.42+.2*k);const opt=(j===2)?{a,zoom:1.00,cx:.50,cy:.79}:{a,zoom:1.03};drawCover(I[k],{x:W*b[0],y:H*b[1],w:W*b[2],h:H*b[3]},opt)});break}
 case'organic_oase':{
   // V4.1.3: "Oase" stays legible as an accidental comment inside the
   // surrounding concrete landscape. No isolated sign close-up.
